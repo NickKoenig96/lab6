@@ -1,0 +1,19 @@
+head
+  title Counterstrike
+  
+h1 Countersrtrike game stats
+#container.col
+  form(action='/action_page.php')
+    label(for='teams') Choose a team:
+    select#teams(name='teams')
+      option(value='volvo') Team1
+      option(value='saab') Team2
+      option(value='fiat') Team3
+    label(for='fname') Score
+    input#score(type='text' name='score')
+    br
+    br
+    input(type='submit' value='Submit')
+
+script(src="/primus/primus.js") 
+script(src="/javascript/dashboard.js") 
