@@ -1,8 +1,21 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+  background-color:rgb(0,0,0);
+  padding: 10px;
 }
 
-a {
-  color: #00B7FF;
+.grid-container > div {
+  background-color: rgb(96,96,96);
+  text-align: center;
+  padding: 40px 0;
+  font-size: 30px;
 }
+
+img{
+width:25%;
+}
+
+
