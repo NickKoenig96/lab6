@@ -3,17 +3,17 @@ head
   
 h1(class='test') Countersrtrike game stats
 #container.col
-  form(action='/action_page.php')
+  form(action='')
     label(for='teams') Choose a team:
-    select#teams(name='teams')
-      option(value='volvo') Team1
-      option(value='saab') Team2
-      option(value='fiat') Team3
+    select#teams(name='teams' class='team')
+      option(value='Team1') Team1
+      option(value='Team2') Team2
+      option(value='Team3') Team3
     label(for='fname') Score
-    input#score(type='text' name='score')
+    input#score(type='text' name='score' class='score')
     br
     br
-    input(type='submit' value='Submit')
+    input(type='submit' value='Submit' class='submit')
 
 script(src="http://localhost:3000/primus/primus.js") 
-  script(src="/javascripts/dashboard.js")
+script(src="/javascripts/dashboard.js")
