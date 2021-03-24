@@ -12,7 +12,7 @@ let primus = Primus.connect("http://localhost:3000", {
     let team = data.team;
     let score = data.score;
 
-   // document.querySelector(`score${team}`).innerHTML= score;
+   document.querySelector(`.score${team}`).innerHTML= 'score = ' + score;
 
     console.log(team+ ' '+ score)
 
