@@ -18,9 +18,8 @@ app.set('port', port);
 /**
  * Create HTTP server.
  */
-
-var server = http.createServer(app);
-require("../primus/updatestats.js").go(server);
+ var server = http.createServer(app);
+ require("../primus/updatestats.js").go(server);
 
 /**
  * Listen on provided port, on all network interfaces.

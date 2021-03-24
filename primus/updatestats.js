@@ -1,10 +1,20 @@
-const Primus = require('primus');
+exports.go = (server) => {
+  var Primus = require('primus');
+  let primus = new Primus(server, {});
 
-function go(server){
-  let primus = new Primus(server, {/* options */});
-  
+
+  primus.on("connection", (spark) => {
+    console.log("⚡️️️️");
+
+   /* spark.on("data", (data) => {
+      console.log(`received ${data.emotion}`);
+
+
+    });*/
+
+  });
+
+
 
 }
-
-module.exports.go = go;
 

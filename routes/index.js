@@ -6,8 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('stats/index', {});
 });
 
-router.get('/', function(req, res, next) {
-  res.render('updatestats/index', {});
+router.get('/updatestats', function(req, res, next) {
+  res.render('stats/updatestats', {});
 });
 
 module.exports = router;
