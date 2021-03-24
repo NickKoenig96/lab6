@@ -6,11 +6,9 @@ exports.go = (server) => {
   primus.on("connection", (spark) => {
     console.log("⚡️️️️");
 
-   /* spark.on("data", (data) => {
-      console.log(`received ${data.emotion}`);
-
-
-    });*/
+    spark.on("data", (data) => {
+      primus.write(data);
+    });
 
   });
 

@@ -19,6 +19,10 @@ document.querySelector('.submit').addEventListener('click', (e) =>{
         score: score
       });
 
+      console.log(team + ' '+score)
+
+      
+
 
 
 })

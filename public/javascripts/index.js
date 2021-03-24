@@ -6,9 +6,17 @@ let primus = Primus.connect("http://localhost:3000", {
     }
   });
 
-  console.log('test');
 
 
-  document.querySelector('.test').addEventListener('click', (e) =>{
-    console.log('click');
-})
+  primus.on("data", (data) => {
+    let team = data.team;
+    let score = data.score;
+
+   // document.querySelector(`score${team}`).innerHTML= score;
+
+    console.log(team+ ' '+ score)
+
+   
+
+ });
+ 
